@@ -1,0 +1,160 @@
+:root {
+	--fuente-principal: "Asap", sans-serif;
+}
+
+/* generales */
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* Para 1rem = 10px */
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	line-height: 2;
+	font-size: 1.6rem;
+	text-align: center;
+	margin: 0;
+	font-family: var(--fuente-principal);
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		font-size: 2rem;
+	}
+}
+
+/* entrada */
+
+header {
+	background-color: black;
+}
+
+#entrada-pagina-principal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+#video-fondo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+}
+
+h1 {
+	margin: 0 1rem;
+	z-index: 1;
+}
+
+#enlace-jhon-cardona {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+}
+
+#jhon-cardona {
+	animation: cambio-de-color 5s infinite;
+}
+
+@keyframes cambio-de-color {
+	0% {
+		color: #ff0000;
+	}
+
+	16% {
+		color: #ff5733;
+	}
+
+	33% {
+		color: #fffc33;
+	}
+
+	50% {
+		color: #26c21a;
+	}
+
+	66% {
+		color: #1a3cc2;
+	}
+
+	83% {
+		color: #941ac2;
+	}
+
+	100% {
+		color: #5a1ac2;
+	}
+}
+
+#desarrollador {
+	align-self: flex-end;
+	color: wheat;
+}
+
+/* proyectos */
+
+#proyectos-titulo {
+	text-align: left;
+}
+
+.proyecto-display {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+}
+
+.proyecto-display a {
+	text-decoration: none;
+	color: blue;
+}
+
+/* footer */
+footer {
+	background-color: black;
+	color: white;
+}
+
+#navegacion-footer {
+	display: flex;
+	justify-content: space-around;
+}
+
+#navegacion-footer a {
+	color: gray;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* contacto */
+
+#contacto-titulo {
+	text-align: left;
+}
+
+.elemento-contacto a {
+	text-decoration: none;
+}
