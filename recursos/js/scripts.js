@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("load", (event) => {
 	// Header usa el espacio completo de la ventana
 
 	if (window.matchMedia("(max-width: 768px)").matches) {
