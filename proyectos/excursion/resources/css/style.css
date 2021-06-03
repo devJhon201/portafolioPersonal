@@ -1,0 +1,42 @@
+body {
+	background-color: black;
+	font-family: Verdana;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+#main-title {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+}
+
+.subtitle {
+	color: white;
+	font-size: 42px;
+}
+
+.text {
+	color: gray;
+	font-size: 21px;
+}
+
+#phone-img {
+	margin-top: 30px;
+}
+
+.link,
+.link:active {
+	color: aquamarine;
+	font-size: 16px;
+}
+
+#copyright {
+	color: gray;
+	text-align: right;
+}
