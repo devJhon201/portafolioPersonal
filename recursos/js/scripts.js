@@ -15,6 +15,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		fotoProyecto.setAttribute("src", "./recursos/img/tea-movil.jpeg");
 		fotoProyecto = document.getElementById("style-img");
 		fotoProyecto.setAttribute("src", "./recursos/img/style-movil.jpeg");
+		fotoProyecto = document.getElementById("art-img");
+		fotoProyecto.setAttribute("src", "./recursos/img/art-movil.jpeg");
 	}
 	//  else {
 	// 	/* The viewport is greater than 768 pixels wide */
