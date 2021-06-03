@@ -44,6 +44,7 @@ li {
 
 header {
 	background-color: black;
+	
 }
 
 #entrada-pagina-principal {
@@ -51,6 +52,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
+	overflow: hidden;
 }
 
 #video-fondo {
@@ -59,8 +61,8 @@ header {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	width: 100%;
-    height: 100%;
+	width: auto;
+	height: 100%;
 }
 
 h1 {
@@ -157,4 +159,11 @@ footer p {
 
 .elemento-contacto a {
 	text-decoration: none;
+}
+
+.icono-texto {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
 }
