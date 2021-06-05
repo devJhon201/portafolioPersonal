@@ -17,8 +17,7 @@ window.addEventListener("load", (event) => {
 		fotoProyecto.setAttribute("src", "./recursos/img/style-movil.jpeg");
 		fotoProyecto = document.getElementById("art-img");
 		fotoProyecto.setAttribute("src", "./recursos/img/art-movil.jpeg");
+	} else {
+		/* The viewport is greater than 768 pixels wide */
 	}
-	//  else {
-	// 	/* The viewport is greater than 768 pixels wide */
-	// }
 });

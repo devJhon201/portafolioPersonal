@@ -44,7 +44,6 @@ li {
 
 header {
 	background-color: black;
-	
 }
 
 #entrada-pagina-principal {
@@ -113,6 +112,12 @@ h1 {
 #desarrollador {
 	align-self: flex-end;
 	color: wheat;
+}
+
+@media only screen and (max-width: 768px) {
+	#entrada-pagina-principal {
+		display: initial;
+	}
 }
 
 /* proyectos */
