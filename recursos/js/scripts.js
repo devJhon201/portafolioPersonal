@@ -36,12 +36,14 @@ for (const imagen of imagenes) {
 		const btnCerrar = document.createElement('P');
 		btnCerrar.classList.add('btn-cerrar')
 		btnCerrar.innerHTML = 'Cerrar';
-		btnCerrar.onclick = function() {
-			sobreponer
-		}
 		sobrePoner.appendChild(btnCerrar);
 		btnCerrar.onclick = function() {
 			sobrePoner.remove()
+		}
+		if (window.matchMedia("(max-width: 768px)").matches) {
+			sobrePoner.onclick = function() {
+				sobrePoner.remove();
+			}
 		}
 	};
 }
