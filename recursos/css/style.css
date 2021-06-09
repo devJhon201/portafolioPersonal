@@ -157,6 +157,32 @@ h1 {
 
 /* proyectos */
 
+.sobrePoner {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+.sobrePoner img {
+	max-height: 80%;
+	width: auto;
+}
+
+.btn-cerrar {
+	background-color: white;
+	font-weight: bold;
+	padding: 10px;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.btn-cerrar:hover {
+	cursor: pointer;
+}
+
 #proyectos-titulo {
 	text-align: left;
 }
@@ -165,6 +191,10 @@ h1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 30px;
+}
+
+.proyecto-display img:hover {
+	cursor: pointer;
 }
 
 .proyecto-display a {
@@ -199,7 +229,7 @@ footer {
 
 .enlace-nav {
 	color: white;
-	padding: 10px;
+	padding: 20px;
 }
 
 .enlace-nav:hover {

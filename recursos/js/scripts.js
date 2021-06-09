@@ -1,4 +1,4 @@
-window.addEventListener("load", (event) => {
+document.addEventListener("DOMContentLoaded", (event) => {
 	// Header usa el espacio completo de la ventana
 
 	if (window.matchMedia("(max-width: 768px)").matches) {
@@ -21,3 +21,30 @@ window.addEventListener("load", (event) => {
 		/* The viewport is greater than 768 pixels wide */
 	}
 });
+// Mostrar imagen más grande
+const imagenes = document.getElementsByTagName("img");
+
+for (const imagen of imagenes) {
+	imagen.onclick = function () {
+		let sobrePoner = document.createElement("DIV");
+		sobrePoner.classList.add("sobrePoner");
+		let img = document.createElement('IMG');
+		img.src = imagen.src;
+		sobrePoner.appendChild(img);
+		const body = document.querySelector("body");
+		body.appendChild(sobrePoner);
+		const btnCerrar = document.createElement('P');
+		btnCerrar.classList.add('btn-cerrar')
+		btnCerrar.innerHTML = 'Cerrar';
+		btnCerrar.onclick = function() {
+			sobreponer
+		}
+		sobrePoner.appendChild(btnCerrar);
+		btnCerrar.onclick = function() {
+			sobrePoner.remove()
+		}
+	};
+}
+
+
+
